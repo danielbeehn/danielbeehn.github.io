@@ -96,9 +96,6 @@
             </div>
         </div>
         <div class="background">
-            <video autoplay muted loop webkit-playsinline playsinline>
-                <source src="video/particles.mp4" type="video/mp4" />
-            </video>
         </div>
     </header>
 
@@ -378,6 +375,23 @@
             "outerHeight": 41
         }; 
         magicMouse(options);
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+    el: ".background",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x393939,
+    backgroundColor: 0x0d0d0d
+    })
     </script>
 
     <!-- Contact form JavaScript -->
